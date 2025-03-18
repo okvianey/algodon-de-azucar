@@ -1,200 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algodón de Azucar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="icon" type="icon" href="./img/favicon.svg">
-    <link rel="stylesheet" href="./dist/css/normalize.css">
-    <link rel="stylesheet" href="./dist/css/style.css">   
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Algodón de Azucar - Pintado a mano</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="./favicon.svg" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-  <header id="header">
-    <div class="space-nav">
-      <a href="#">
-        <img id="header-img" src="./img/logo-transparente.png" alt="logo">
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="./assets/img/logo-transparente.png" alt="">
       </a>
-    </div>
-    <nav id="nav-bar">
-      <a href="#products-title" class="nav-link">Diseños</a>
-      <a href="#process-title" class="nav-link">Proceso</a>
-      <a href="#contact-title" class="nav-link">Contacto</a>
-    </nav>
-    <div class="space-nav hidde">
-      <a href="https://wa.me/529211445265" target="blank_" class="button primary">Cotiza tu par</a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio<br></a></li>
+          <li><a href="#about">Proceso</a></li>
+          <li><a href="#gallery">Nuestros diseños</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Cotiza tu Par</a>
+
     </div>
   </header>
-<!--Hero section-->
-  <section id="hero">
-    <div id="title" class="title">
-      <h1 class="title">Para verte como quieres</h1>
-      <h4 class="title">Personalizamos tus prendas favoritas con el diseño que quieras, totalmente pintadas a mano.</h4>
-      <div>
-        <a href="#products-title" id="display" class="button outline">Ver diseños</a>
-      </div>
-    </div>
-    
-    <div class="img-hero">
-      <img id="hero-tenis" src="./img/hero-tenis01.png" alt="tenis">
-    </div>
-    
-    <div class="mobile-button">
-      <a href="#products-title" class="button outline">Ver diseños</a>
-    </div>
 
-  </section>
-  <div class="wave">
-    <svg width="100%" height="100%" viewBox="0 0 1438 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M696.531 120C394.951 120 106.519 68.1172 0 42.1757V0H1438V42.1757C1316.5 68.1172 998.112 120 696.531 120Z" fill="#23B4B1"/>
-      </svg>
-  </div>
-<!--Process section-->
-  <section id="process">
-    <h2 id="process-title">Nuestro Proceso</h2>
-    <div class="process-container">
-      <div class="box">
-        <span class="material-icons">emoji_objects</span>
-        <h3>Tu idea</h3>
-        <p>Cuéntanos el diseño que te gustaría. Puedes darnos tu tenis o haz tu pedido con el diseño de tu preferencia y nosotros te entregamos tu par.</p>
-      </div>
-      <div class="box">
-        <span class="material-icons">palette</span>
-        <h3>Creamos</h3>
-        <p>Adaptamos tu idea, diseñamos y pintamos totalmente a mano tus tenis con materiales de calidad.</p>
-      </div>
-      <div class="box">
-        <span class="material-icons">emoji_emotions</span>
-        <h3>Disfruta</h3>
-        <p>Entregamos tu pedido para que lo disfrutes.</p>
-      </div>
-    </div>
-  </section>
-<!--Products section-->
-  <div class="wave-top">
-    <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M742.5 5.34635e-05C1044.5 7.98652e-05 1333.33 51.8829 1440 77.8243L1440 120L0 120L3.68713e-06 77.8242C121.667 51.8828 440.5 2.70619e-05 742.5 5.34635e-05Z" fill="#FADAEF"/>
-    </svg>    
-  </div>
-  <section id="products">
-    <h2 id="products-title">Algunos diseños</h2>
-    <div class="products-container">
-      <div class="products-box">
-        <img src="./img/wody.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/violin.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/ojos.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/minie.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/mario.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/luke-leia.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/lines.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/harley.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/family-mickey.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/wonderWoman.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/animalprint.jpg" alt="product">
-      </div>
-      <div class="products-box">
-        <img src="./img/entrenarAtuDragon.jpg" alt="product">
-      </div>
-    </div>
-    <a href="https://www.facebook.com/algodondeazucarbyfridaruiz/photos/?ref=page_internal" class="fb-link" target="_blank">Ver más</a>
-  </section>
-  <div class="wave">
-    <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M697.984 120C395.775 120 106.741 68.1172 0 42.1757V0H1441V42.1757C1319.25 68.1172 1000.19 120 697.984 120Z" fill="#FADAEF"/>
-      </svg>
-  </div>
-<!--Testimony section-->
-  <section id="testimony">
-    <div>
-      <h1>Nuestro motor son ustedes. Gracias por la confianza</h1>
-    </div>
-    <div class="testimony-img">
-      <img src="./img/testimony.png" alt="testimony">
-    </div>
-  </section>
-<!--Video section-->
-  <div class="wave-top">
-    <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M742.5 5.34635e-05C1044.5 7.98652e-05 1333.33 51.8829 1440 77.8243L1440 120L0 120L3.68713e-06 77.8242C121.667 51.8828 440.5 2.70619e-05 742.5 5.34635e-05Z" fill="#FADAEF"/>
-    </svg>    
-  </div>
-  <section id="video-section">
-    <div class="video-div">
-      <iframe src="https://player.vimeo.com/video/273021880?h=345f0d687f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen><p>Your browser does not support iframes.</p></iframe>
-    </div>
-  </section>
-  <div class="wave">
-    <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M697.984 120C395.775 120 106.741 68.1172 0 42.1757V0H1441V42.1757C1319.25 68.1172 1000.19 120 697.984 120Z" fill="#FADAEF"/>
-      </svg>
-  </div>
-<!--Contact section-->
-  <section id="contact">
-    <h1 id="contact-title">Contacto</h1>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <div class="input">
-        <label for="name">Nombre</label>
-        <input type="text" name="name" placeholder="Nombre" required>
-      </div>
-      <div class="input">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-      </div>
-      <div class="input">
-        <label for="phone">Teléfono</label>
-        <input type="tel" name="phone" placeholder="Teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-      </div>
-      <div class="input">
-        <label for="message">Cuéntanos tu idea:</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Diseño que te gustaría, talla de calzado, detalles extra..." required></textarea>
-      </div>
-      <div>
-        <input type="button" id="submit" class="button secundary" name="button" value="Enviar">
-      </div>
-    </form> 
-  </section>
+  <main class="main">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-between">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">¡Para verte como quieres!</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Personalizamos tus prendas favoritas con el diseño que quieras, totalmente pintadas a mano.</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#gallery" class="btn-get-started">Ver diseños</a>
+              <a href="https://player.vimeo.com/video/273021880?h=345f0d687f&title=0&byline=0&portrait=0" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver video</span></a>
+            </div>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="./assets/img/hero-tenis01.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </section><!-- /Hero Section -->
+    <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M697.984 120C395.775 120 106.741 68.1172 0 42.1757V0H1441V42.1757C1319.25 68.1172 1000.19 120 697.984 120Z" fill="#f2f2f2"></path>
+      </svg>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestro Proceso<br></h2>
+        <p><span>Conoce cómo</span> <span class="description-title">trabajamos</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 mx-auto" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5 text-center">
+              <p>
+                En nuestro taller, tus ideas cobran vida. Desde diseños únicos hasta colores vibrantes, creamos zapatos que cuentan tu historia. ¿Listo para calzar algo que nadie más tiene?
+              </p>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Nuestro Proceso Section -->
+    <section id="nuestro-proceso" class="nuestro-proceso section dark-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-top align-items-center">
+                  <i class="bi bi-lightbulb-fill"></i>
+                  <h4>Tu idea</h4>
+                  <p>¿Tienes un diseño en mente? Cuéntanos cómo te gustaría que fueran tus zapatos personalizados. Puedes enviarnos tu par de tenis favoritos o simplemente hacer tu pedido con el diseño que siempre has soñado.</p>
+                </div>
+              </div>
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-top align-items-center">
+                  <i class="bi bi-palette-fill"></i>
+                  <h4>Creamos</h4>
+                  <p>Transformamos tu idea en una obra de arte. Nuestro equipo de expertos adapta, diseña y pinta totalmente a mano cada detalle de tus zapatos, utilizando materiales de la más alta calidad para garantizar un resultado único y duradero.</p>
+                </div>
+              </div>
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-top align-items-center">
+                  <i class="bi bi-emoji-laughing-fill"></i>
+                  <h4>Disfruta</h4>
+                  <p>Una vez que tus zapatos estén listos, te los entregamos para que los disfrutes al máximo. Luce un calzado que refleje tu estilo y personalidad, hecho especialmente para ti.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Nuestro trabajo Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestro Trabajo</h2>
+        <p><span>Conoce algunos de </span> <span class="description-title">nuestros diseños</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-1.jpg"><img src="./assets/img/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-2.jpg"><img src="./assets/img/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-3.jpg"><img src="./assets/img/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-4.jpg"><img src="./assets/img/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-5.jpg"><img src="./assets/img/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-6.jpg"><img src="./assets/img/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-7.jpg"><img src="./assets/img/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-8.jpg"><img src="./assets/img/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-9.jpg"><img src="./assets/img/gallery-9.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-10.jpg"><img src="./assets/img/gallery-10.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-11.jpg"><img src="./assets/img/gallery-11.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="./assets/img/gallery-12.jpg"><img src="./assets/img/gallery-12.jpg" class="img-fluid" alt=""></a></div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>TESTIMONIOS</h2>
+        <p>Ustedes son <span class="description-title">nuestro motor</span></p>
+      </div>
+      
+      <div class="container d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="d-none d-lg-block col-lg-3">
+          <img src="./assets/img/testimony.png" class="img-fluid testimonial-img" alt="">
+        </div>
+
+        <div class="swiper init-swiper col-12 col-lg-9">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>¡Increíble experiencia! Les envié mi diseño y superaron todas mis expectativas. Los zapatos quedaron perfectos, ¡y la calidad es insuperable! Definitivamente repetiré.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Ana M.</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Nunca pensé que mis tenis favoritos podrían lucir tan únicos. El equipo captó exactamente lo que quería y los detalles a mano son impresionantes. ¡Los amo!</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Carlos R.</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Compré unos zapatos personalizados como regalo y fue un éxito total. El diseño quedó espectacular y el proceso fue muy fácil. ¡Recomendados al 100%!</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Laura G.</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Finalmente tengo unos zapatos que reflejan mi estilo. La atención al detalle y la calidad de los materiales son increíbles. ¡Gracias por hacer mi idea realidad!</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Javier L.</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p><span>¿Necesitas </span> <span class="description-title">más información?</span></p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+        <form action="https://formspree.io/f/xvgkgero"
+        method="POST" class="email-form col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="600">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <button type="submit">Enviar mensaje</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+    </section>
+    <!-- /Contact Section -->
+
+  </main>
   <div class="wave-footer">
     <svg width="100%" height="100%" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M742.5 5.34635e-05C1044.5 7.98652e-05 1333.33 51.8829 1440 77.8243L1440 120L0 120L3.68713e-06 77.8242C121.667 51.8828 440.5 2.70619e-05 742.5 5.34635e-05Z" fill="#23B4B1"/>
+      <path d="M742.5 5.34635e-05C1044.5 7.98652e-05 1333.33 51.8829 1440 77.8243L1440 120L0 120L3.68713e-06 77.8242C121.667 51.8828 440.5 2.70619e-05 742.5 5.34635e-05Z" fill="#1d1d20"/>
     </svg>    
   </div>
-  <footer>
-    <div class="icons">
-      <a href="https://wa.me/529211445265" target="blank_">
-        <img src="./img/whatsapp.svg" alt="icon-logo" width="40px">
-      </a>
-      <a href="#hero">
-        <img src="./img/icon.png" alt="icon-logo" height="40px">
-      </a>
-      <a href="https://www.facebook.com/algodondeazucarbyfridaruiz" target="blank_">
-        <img src="./img/fb.svg" alt="icon-logo" width="40px">
-      </a>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="gy-3 d-flex justify-content-between">
+        
+        <div class="">
+          <a href="#hero" target="blank_" class="whatsapp"><img src="./assets/img/icon.png" alt="icon-logo" height="50px"></a>
+        </div>
+        <div class="">
+          <div class="social-links d-flex">
+            <a href="https://wa.me/529211445265" target="blank_" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/algodondeazucarbyfridaruiz" target="blank_" class="facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="dev">Made by <a href="https://github.com/vianydev" target="blank_">VianyDev</a></div>
+
+    <div class="container copyright text-center mt-4">
+      <div class="credits">
+        Hecho con café y código por <a href="https://flatlatte.com/">Flat Latte</a>
+      </div>
+    </div>
+
   </footer>
-  <script src="./dist/js/script.js" type="text/javascript"></script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
